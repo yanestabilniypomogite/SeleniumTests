@@ -8,12 +8,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+url = "https://test.qa.studio"
 
 def test_product_view_sku(browser):
     """
     Test case WERT-1
     """
-    url = "https://test.qa.studio"
     browser.get(url=url)
 
     element = browser.find_element(by=By.CSS_SELECTOR, value="[class='tab-featured ']")
@@ -32,6 +32,5 @@ def test_smoke(browser):
     """
     Test case SMK-1
     """
-    url = "https://test.qa.studio"
     browser.get(url=url)
     
